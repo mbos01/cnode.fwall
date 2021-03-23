@@ -34,7 +34,7 @@ Always make sure to list your core producer in the exception list! You don't wan
    ```
    sudo nano cnode.fwall.config
    ```
-   ![alt text](https://github.com/mbos01/cnode.fwall/blob/main/cnode.fwall.config.jpg?raw=true)
+   ![alt text](https://github.com/mbos01/media/blob/main/cnode.fwall/cnode.fwall.config.jpg?raw=true)
 
    > I'm assuming mail config is in place, I only tested using `POSTFIX`. If you don't want to use the mail function comment out `MAIL_EXE` by placing a `#` in front of it: `#MAIL_EXE`.
 
@@ -42,7 +42,7 @@ Always make sure to list your core producer in the exception list! You don't wan
    ```
    sudo nano iptables.rules
    ```
-   ![alt text](https://github.com/mbos01/cnode.fwall/blob/main/iptables.rules.jpg?raw=true)
+   ![alt text](https://github.com/mbos01/media/blob/main/iptables.rules.jpg?raw=true)
    > Your NIC (Network Interface Card) will most likely be `eth0`.
    > 
 
