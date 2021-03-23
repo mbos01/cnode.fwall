@@ -40,7 +40,7 @@ Always make sure to list your core producer in the exception list! You don't wan
 
 4. Adjust the default iptables rules, these will always be active (limited ruleset included, adjust to your liking but be sure to keep the last 2 rules always at the bottom)
    ```
-   sudo nano ipconfig.rules
+   sudo nano iptables.rules
    ```
    ![alt text](https://github.com/mbos01/cnode.fwall/blob/main/iptables.rules.jpg?raw=true)
    > Your NIC (Network Interface Card) will most likely be `eth0`.
