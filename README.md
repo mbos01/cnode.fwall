@@ -36,6 +36,7 @@ Always make sure to list your core producer in the exception list! You don't wan
    ```
    ![alt text](https://github.com/mbos01/cnode.fwall/blob/main/cnode.fwall.config.jpg?raw=true)
 
+   > I'm assuming mail config is in place, I only tested using `POSTFIX`.
    > If you don't want to use the mail function comment out `MAIL_EXE` by placing a `#` in front of it: `#MAIL_EXE`.
 
 4. Adjust the default iptables rules, these will always be active (limited ruleset included, adjust to your liking)
