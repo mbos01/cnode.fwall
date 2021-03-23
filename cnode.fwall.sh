@@ -143,7 +143,7 @@ while true; do
 
 				#send mail
 				if ! [[ -z $MAIL_EXE ]]; then
-					$MAIL_EXE -s "[cnode.fwall] - NEW BAN" -a "FROM:$MAIL_FROM" $MAIL_TO <<< "IP $ip has just been banned for a period of $BAN_TIME minutes after having exceeded the connection threshold of $CONNECTIONS_THRESHOLD connections."
+					$MAIL_EXE -s "[cnode.fwall] - NEW BAN" -a "FROM:$MAIL_FROM" $MAIL_TO <<< "IP $ip has just been banned for a period of $BAN_TIME minutes after having exceeded the threshold of $CONNECTIONS_THRESHOLD connections."
 				fi
 				ban=true
 			fi
