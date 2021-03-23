@@ -1,0 +1,14 @@
+[Unit]
+Description=cnode.fwall
+After=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=[WORKINGDIR]
+ExecStart=[WORKINGDIR]/cnode.fwall.sh
+StandardOutput=syslog
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

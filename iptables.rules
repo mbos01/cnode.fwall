@@ -1,0 +1,6 @@
+iptables -A INPUT -i lo -j ACCEPT
+iptables -A OUTPUT -o lo -j ACCEPT
+iptables -A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+iptables -A OUTPUT -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptables -A INPUT -i ** CHANGE TO YOUR NIC ** -p tcp --dport **CHANGE TO YOUR CNODE PORT** -j ACCEPT
+iptables -A INPUT -i ** CHANGE TO YOUR NIC ** -j DROP
