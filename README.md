@@ -38,7 +38,7 @@ Always make sure to list your core producer in the exception list! You don't wan
 
    > I'm assuming mail config is in place, I only tested using `POSTFIX`. If you don't want to use the mail function comment out `MAIL_EXE` by placing a `#` in front of it: `#MAIL_EXE`.
 
-4. Adjust the default iptables rules, these will always be active (limited ruleset included, adjust to your liking)
+4. Adjust the default iptables rules, these will always be active (limited ruleset included, adjust to your liking but be sure to keep the last 2 rules always at the bottom)
    ```
    sudo nano ipconfig.rules
    ```
