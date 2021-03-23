@@ -46,7 +46,12 @@ Always make sure to list your core producer in the exception list! You don't wan
    > Your NIC (Network Interface Card) will most likely be `eth0`.
    > 
 
-5. Install as a service
+5. Make executable
+   ```
+   sudo chmod +x cnode.fwall.sh
+   ```
+   
+6. Install as a service
    ```
    sudo ./cnode.fwall.sh --install
    ```
