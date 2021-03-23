@@ -48,7 +48,7 @@ Always make sure to list your core producer in the exception list! You don't wan
 
 5. Install as a service
    ```
-   sudo ./cnode.sh --install
+   sudo ./cnode.fwall.sh --install
    ```
    > Service is installed and started. You can check the status by running `sudo service cnode.fwall status` or by looking in the syslog `sudo cat /var/log/syslog`.
    > 
