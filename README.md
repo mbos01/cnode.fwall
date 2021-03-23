@@ -55,6 +55,6 @@ Always make sure to list your core producer in the exception list! You don't wan
 
 From here on the script is running on auto-pilot and it will kickban any ip address that crosses your connection threshold.
 
-!! ABSOLUTELY MAKE SURE THAT YOU DON'T LOCK YOURSELF OUT AND THAT YOUR CORE PRODUCER WILL NOT GET BANNED FROM YOUR RELAY NODES !!
+**ABSOLUTELY MAKE SURE THAT YOU DON'T LOCK YOURSELF OUT AND THAT YOUR CORE PRODUCER WILL NOT GET BANNED FROM YOUR RELAY NODES**
 
  
