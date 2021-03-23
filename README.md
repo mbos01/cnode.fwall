@@ -42,7 +42,7 @@ Always make sure to list your core producer in the exception list! You don't wan
    ```
    sudo nano iptables.rules
    ```
-   ![alt text](https://github.com/mbos01/media/blob/main/iptables.rules.jpg?raw=true)
+   ![alt text](https://github.com/mbos01/media/blob/main/cnode.fwall/iptables.rules.jpg?raw=true)
    > Your NIC (Network Interface Card) will most likely be `eth0`.
    > 
 
