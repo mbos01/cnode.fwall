@@ -2,7 +2,7 @@
 
 ###################################################################
 
-# Script Name	: cnode.fwall.sh - v.0.1
+# Script Name	: cnode.fwall.sh - v.0.2
 # Description	: scans incoming connections to cnode port and bans ip when threshold is exceeded
 # Config	: cnode.fwall.config
 # Dependencies  : iptables, sqlite3, netstat, mail
@@ -143,7 +143,7 @@ while true; do
 
 				#send mail
 				if ! [[ -z $MAIL_EXE ]]; then
-					$MAIL_EXE -s "[cnode.fwall] - NEW BAN" -a "FROM:$MAIL_FROM" $MAIL_TO <<< "IP $ip has just been banned for a period of $BAN_TIME minutes after having exceeded the threshold of $CONNECTIONS_THRESHOLD connections."
+					$MAIL_EXE -s "[cnode.fwall] - $HOSTNAME: NEW BAN" -a "FROM:$MAIL_FROM" $MAIL_TO <<< "IP $ip has just been banned for a period of $BAN_TIME minutes after having exceeded the threshold of $CONNECTIONS_THRESHOLD connections."
 				fi
 				ban=true
 
